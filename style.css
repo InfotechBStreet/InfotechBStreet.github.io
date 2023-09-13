@@ -17,10 +17,10 @@ li {
 }
 
 h1 {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: 300;
 	letter-spacing: 0.3rem;
-	padding: 0 1rem;
+	padding: 1rem;
 	cursor: pointer;
 }
 
@@ -40,6 +40,11 @@ nav {
 	cursor: pointer;
 }
 
+.nav_toggle > .icon {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
 .nav_toggle:hover {
 	opacity: 0.7;
 }
@@ -48,6 +53,7 @@ nav {
 	display: none;
 	justify-content: space-around;
 	align-items: center;
+	height: 100%;
 }
 
 .nav_items > li {
@@ -79,26 +85,31 @@ nav {
 	transform: translateX(0);
 }
 
+/* Styles for the main section */
+
 main {
 	grid-column: 1/13;
+	height: 100vh;
 	display: grid;
 	grid-template: 1fr/1fr;
 }
 
 .main_bg_container {
-	grid-column: 1/2;
-	grid-row: 1/2;
+	position: fixed;
+	top: 0;
+	left: 0;
 	z-index: -1;
 	overflow: hidden;
 	justify-self: center;
 	display: grid;
 	width: 100%;
+	min-height: 100vh;
 }
 
 .main_bg_container > img {
-	filter: blur(0.5rem);
-	min-width: 100%;
-	min-height: 100%;
+	filter: blur(0.1rem);
+	width: 110%;
+	height: 110%;
 	object-fit: cover;
 	justify-self: center;
 }
@@ -122,14 +133,14 @@ main {
 }
 
 .main_title {
-	font-size: 3rem;
+	font-size: 2rem;
 	font-weight: 300;
 	letter-spacing: 0.3rem;
 	margin: 1rem 0;
 }
 
 .main_courses_link {
-	padding: 1rem 2rem;
+	padding: 0.5rem 1.5rem;
 	background-color: #ccc;
 	width: fit-content;
 	color: black;
@@ -139,6 +150,27 @@ main {
 
 .main_courses_link:hover {
 	background-color: #eee;
+}
+
+/* Styles for the about section */
+
+#about {
+	grid-column: 1/13;
+	height: 100vh;
+	display: grid;
+	grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+}
+
+.about_header {
+	grid-column: span 12;
+	grid-row: span 4;
+	border: 1px solid blue;
+}
+
+.about_item {
+	grid-column: span 6;
+	grid-row: span 4;
+	border: 1px solid red;
 }
 
 .icon {
@@ -153,7 +185,7 @@ main {
 
 @media only screen and (min-width: 765px) {
 	h1 {
-		font-size: 2rem;
+		padding: 0 1rem;
 	}
 
 	.nav_items {
@@ -165,10 +197,25 @@ main {
 	}
 
 	.main_title {
-		font-size: 4rem;
+		font-size: 3rem;
 	}
 
 	.sidebar {
 		display: none;
+	}
+
+}
+
+@media only screen and (min-width: 923px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.main_title {
+		font-size: 4rem;
+	}
+
+	.main_courses_link {
+		padding: 1rem 2rem;
 	}
 }

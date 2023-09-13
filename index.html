@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
+
+	<!-- This section contains the navigation bar -->
 	<nav>
 		<h1>Infotech B. Street</h1>
 		<ul class="nav_items">
@@ -40,6 +42,9 @@
 			</svg>
 		</div>
 	</nav>
+	<!--  End of section -->
+
+	<!-- This section contains the fixed elements -->
 	<section class="sidebar" id="sidebar">
 		<div class="nav_toggle" onclick="navToggle()">
 			<svg class="icon" viewBox="0 0 1536 1280" xmlns="http://www.w3.org/2000/svg">
@@ -47,10 +52,13 @@
 			</svg>
 		</div>
 	</section>
-	<main>
-		<div class="main_bg_container">
-			<img src="./assets/backgrounds/mac.jpg" alt="">
-		</div>
+	<div class="main_bg_container">
+		<img src="./assets/backgrounds/mac.jpg" alt="">
+	</div>
+	<!-- End of section -->
+
+	<!-- This section contains the main content -->
+	<main id="home">
 		<div class="main">
 			<div class="main_body">
 				<span class="main_title">Learn for the sake of learning</span>
@@ -62,6 +70,33 @@
 			</div>
 		</div>
 	</main>
+	<!-- End of section -->
+
+	<!-- This is the about section -->
+	<section id="about" class="about">
+		<div class="about_header"></div>
+		<div class="about_item">
+			<div class="about_item_icon"></div>
+			<div class="about_item_title"></div>
+			<div class="about_item_desc"></div>
+		</div>
+		<div class="about_item">
+			<div class="about_item_icon"></div>
+			<div class="about_item_title"></div>
+			<div class="about_item_desc"></div>
+		</div>
+		<div class="about_item">
+			<div class="about_item_icon"></div>
+			<div class="about_item_title"></div>
+			<div class="about_item_desc"></div>
+		</div>
+		<div class="about_item">
+			<div class="about_item_icon"></div>
+			<div class="about_item_title"></div>
+			<div class="about_item_desc"></div>
+		</div>
+	</section>
+
 	<script src="script.js"></script>
 </body>
 </html>
