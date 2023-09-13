@@ -47,6 +47,11 @@ nav {
 	cursor: pointer;
 }
 
+.sidebar > .nav_toggle {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .nav_toggle > .icon {
 	width: 1.5rem;
 	height: 1.5rem;
@@ -97,6 +102,22 @@ nav > h1:hover {
 	background-color: #333;
 	transition: all 0.5s ease-in-out;
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar_items {
+	margin-top: 1rem;
+}
+
+.sidebar_items > li {
+	color: white;
+	padding: 2rem;
+	cursor: pointer;
+}
+
+.sidebar_items > li:hover {
+	background-color: #000;
 }
 
 .sidebar_active {

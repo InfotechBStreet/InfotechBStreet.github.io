@@ -52,10 +52,34 @@
 	<!-- This section contains the fixed elements -->
 	<section class="sidebar" id="sidebar">
 		<div class="nav_toggle" onclick="navToggle()">
-			<svg class="icon" viewBox="0 0 1536 1280" xmlns="http://www.w3.org/2000/svg">
-				<path fill="currentColor" d="M1536 1088v128q0 26-19 45t-45 19H64q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 704V576q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H64q-26 0-45-19T0 192V64q0-26 19-45T64 0h1408q26 0 45 19t19 45z"/>
+			<svg class="icon" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+				<g fill="none">
+				<g clip-path="url(#healthiconsXNegative0)">
+				<path fill="#ffffff" fill-rule="evenodd" d="M48 0H0v48h48V0ZM35.536 13.28a2 2 0 1 0-3.072-2.56L24 20.876L15.537 10.72a2 2 0 1 0-3.073 2.56L21.397 24l-8.933 10.72a2 2 0 1 0 3.072 2.56L24 27.124l8.464 10.156a2 2 0 1 0 3.072-2.56L26.603 24l8.933-10.72Z" clip-rule="evenodd"/>
+				</g>
+				<defs>
+				<clipPath id="healthiconsXNegative0">
+				<path d="M0 0h48v48H0z"/>
+				</clipPath>
+				</defs>
+				</g>
 			</svg>
 		</div>
+		<ul class="sidebar_items">
+			<li onclick="scrollToElement('about'); navToggle()">About</li>
+			<li onclick="scrollToElement('services'); navToggle()">
+				<span>Services</span>
+			</li>
+			<li>
+				<span>Courses</span>
+			</li>
+			<li>
+				<span>Projects</span>
+			</li>
+			<li>
+				<span>Contact</span>
+			</li>
+		</ul>
 	</section>
 	<div class="main_bg_container">
 		<img src="./assets/backgrounds/mac.jpg" alt="">
@@ -151,6 +175,12 @@
 	<!-- Services -->
 	<section id="services">
 	</section>
+	<!-- End of section -->
+
+	<!-- Contact -->
+	<section id="contact">
+	</section>
+	<!-- End of section -->
 
 	<script src="script.js"></script>
 </body>
