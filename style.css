@@ -41,6 +41,7 @@ nav {
 	border-bottom: 1px solid #eee;
 	background-color: white;
 	height: 3rem;
+	z-index: 100;
 }
 
 .nav_toggle {
@@ -195,8 +196,8 @@ main {
 	display: flex;
 }
 
-.main_footer > div {
-	padding: 0.5rem;
+.main_footer > a {
+	margin-right: 1rem;
 }
 
 /* Styles for the about section */
@@ -250,6 +251,75 @@ main {
 	height: 100%;
 }
 
+/* Styles for the courses section */
+#courses {
+	grid-column: span 12;
+}
+
+.courses_grid {
+	width: 100%;
+	display: grid;
+	padding: 1rem;
+	grid-template-columns: repeat(12, 1fr);
+	gap: 1rem;
+}
+
+.course {
+	grid-column: span 12;
+	text-align: center;
+	background-color: #eee;
+	border-radius: 0.5rem;
+	padding: 0.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	transition: all 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.course:hover {
+	transform: scale(1.05);
+}
+
+.course:hover .course_title_underline {
+	width: 30%;
+}
+
+.course_title {
+	font-size: 1.5rem;
+	font-weight: 500;
+	letter-spacing: 0.3rem;
+	margin-top: 1rem;
+}
+
+.course_title_underline {
+	width: 0%;
+	height: 0.2rem;
+	background-color: #333;
+	margin-bottom: 1rem;
+	border-radius: 1rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.course_details {
+	text-align: left;
+	padding-left: 2rem;
+	margin-bottom: 1rem;
+}
+
+.course_detail {
+	list-style-type: disc;
+}
+
+.course_signup_button {
+	margin-top: auto;
+	padding: 0.5rem 1.5rem;
+	background-color: #ccc;
+	border: none;
+	border-radius: 0.2rem;
+	cursor: pointer;
+}
+
 .icon {
 	width: 2rem;
 	height: 2rem;
@@ -260,7 +330,10 @@ main {
 	display: none;
 }
 
-@media only screen and (min-width: 765px) {
+@media only screen and (min-width: 480px) {
+}
+
+@media only screen and (min-width: 786px) {
 	h1 {
 		padding: 0 1rem;
 	}
@@ -294,9 +367,13 @@ main {
 		grid-row: span 6;
 	}
 
+	.course {
+		grid-column: span 4;
+	}
+
 }
 
-@media only screen and (min-width: 923px) {
+@media only screen and (min-width: 1024px) {
 	h1 {
 		font-size: 2rem;
 	}

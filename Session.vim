@@ -14,15 +14,15 @@ else
   set shortmess=aoO
 endif
 badd +1 ~/Desktop/apache/InfotechHome
-badd +70 index.html
-badd +110 style.css
+badd +7 index.html
+badd +106 style.css
 badd +3 script.js
 argglobal
 %argdel
 $argadd ~/Desktop/apache/InfotechHome
-edit style.css
+edit index.html
 argglobal
-balt index.html
+balt style.css
 setlocal fdm=manual
 setlocal fde=0
 setlocal fmr={{{,}}}
@@ -33,12 +33,17 @@ setlocal fdn=20
 setlocal fen
 silent! normal! zE
 let &fdl = &fdl
-let s:l = 106 - ((17 * winheight(0) + 18) / 36)
+let s:l = 7 - ((6 * winheight(0) + 18) / 36)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 106
-normal! 020|
+keepjumps 7
+let s:c = 208 - ((122 * winwidth(0) + 67) / 135)
+if s:c > 0
+  exe 'normal! ' . s:c . '|zs' . 208 . '|'
+else
+  normal! 0208|
+endif
 lcd ~/Desktop/apache/InfotechHome
 tabnext 1
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0 && getbufvar(s:wipebuf, '&buftype') isnot# 'terminal'
