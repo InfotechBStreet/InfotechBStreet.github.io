@@ -204,15 +204,14 @@ main {
 
 #about {
 	grid-column: 1/13;
-	height: 100vh;
 	display: grid;
-	grid-template: repeat(12, 1fr) / repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
 	color: white;
 }
 
 .about_header {
 	grid-column: span 12;
-	grid-row: span 4;
+	margin: 3rem 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -220,8 +219,8 @@ main {
 }
 
 .about_item {
-	grid-column: span 6;
-	grid-row: span 4;
+	grid-column: span 12;
+	margin-bottom: 3rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -311,13 +310,69 @@ main {
 	list-style-type: disc;
 }
 
-.course_signup_button {
+.course_contact {
 	margin-top: auto;
-	padding: 0.5rem 1.5rem;
-	background-color: #ccc;
+	width: 100%;
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.course_contact > span {
+	margin-right: 1rem;
+}
+
+/* Styles for the contact section */
+
+#contact {
+	grid-column: span 12;
+	background-color: #333;
+	color: white;
+}
+
+#contact > form {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+}
+
+#contact > form > h2 {
+	text-align: center;
+	font-size: 1.1rem;
+	font-weight: 500;
+	margin: 1rem 0;
+}
+
+#contact > form > * {
+	margin-bottom: 1rem;
+}
+
+#contact > form > input {
+	width: 100%;
+	max-width: 30rem;
+	padding: 0.5rem;
 	border: none;
 	border-radius: 0.2rem;
+	background-color: #ccc;
+}
+
+#contact > form > button {
+	width: min-content;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 0.2rem;
+	background-color: #ccc;
 	cursor: pointer;
+}
+
+.footer {
+	background-color: #000;
+	padding: 1rem;
+}
+
+.footer > a {
+	color: white;
 }
 
 .icon {
@@ -330,7 +385,18 @@ main {
 	display: none;
 }
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 500px) {
+	.about_item {
+		grid-column: span 6;
+	}
+
+	.course {
+		grid-column: span 6;
+	}
+
+	#contact > form > h2 {
+		font-size: 1.5rem;
+	}
 }
 
 @media only screen and (min-width: 786px) {
@@ -371,6 +437,10 @@ main {
 		grid-column: span 4;
 	}
 
+	#contact > form > h2 {
+		font-size: 2rem;
+	}
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -380,6 +450,10 @@ main {
 
 	h2 {
 		font-size: 1.5rem;
+	}
+
+	.course {
+		grid-column: span 3;
 	}
 
 	.main_title {
