@@ -15,19 +15,13 @@
 		<h1 onclick="scrollToElement('home')">Infotech B. Street</h1>
 		<ul class="nav_items">
 			<li onclick="scrollToElement('about')">About</li>
-			<li onclick="scrollToElement('services')">
-				<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-					<path fill="currentColor" d="M6 17c0-2 4-3.1 6-3.1s6 1.1 6 3.1v1H6m9-9a3 3 0 0 1-3 3a3 3 0 0 1-3-3a3 3 0 0 1 3-3a3 3 0 0 1 3 3M3 5v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2Z"/>
-				</svg>
-				<span>Services</span>
-			</li>
 			<li onclick="scrollToElement('courses')">
 				<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 					<path fill="#000000" d="M14 10v4h-4v-4h4Zm2 0h5v4h-5v-4Zm-2 11h-4v-5h4v5Zm2 0v-5h5v4a1 1 0 0 1-1 1h-4ZM14 3v5h-4V3h4Zm2 0h4a1 1 0 0 1 1 1v4h-5V3Zm-8 7v4H3v-4h5Zm0 11H4a1 1 0 0 1-1-1v-4h5v5ZM8 3v5H3V4a1 1 0 0 1 1-1h4Z"/>
 				</svg>
 				<span>Courses</span>
 			</li>
-			<li>
+			<li onclick="scrollToElement('projects')">
 				<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 					<g fill="none" fill-rule="evenodd">
 					<path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/>
@@ -36,7 +30,7 @@
 				</svg>
 				<span>Projects</span>
 			</li>
-			<li>
+			<li onclick="scrollToElement('contact')">
 				<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 					<path fill="#000000" d="M4 20q-.825 0-1.413-.588T2 18V6q0-.825.588-1.413T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.588 1.413T20 20H4Zm8-7l8-5V6l-8 5l-8-5v2l8 5Z"/>
 				</svg>
@@ -69,16 +63,13 @@
 		</div>
 		<ul class="sidebar_items">
 			<li onclick="scrollToElement('about'); navToggle()">About</li>
-			<li onclick="scrollToElement('services'); navToggle()">
-				<span>Services</span>
-			</li>
 			<li onclick="scrollToElement('courses'); navToggle()">
 				<span>Courses</span>
 			</li>
-			<li>
+			<li onclick="scrollToElement('projects'); navToggle()">
 				<span>Projects</span>
 			</li>
-			<li>
+			<li onclick="scrollToElement('contact'); navToggle()">
 				<span>Contact</span>
 			</li>
 		</ul>
@@ -174,11 +165,6 @@
 	</section>
 	<!-- End of section -->
 
-	<!-- Services -->
-	<section id="services">
-	</section>
-	<!-- End of section -->
-
 	<!-- Courses -->
 	<section id="courses">
 		<div class="courses_grid">
@@ -194,12 +180,12 @@
 				</ul>
 				<div class="course_contact">
 					<span>Contact us at: </span>
-					<a target="blank" href="https://wa.me/+916009341754">
+					<a target="blank" href="https://wa.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.005 22l1.352-4.968A9.953 9.953 0 0 1 2.001 12c0-5.523 4.477-10 10-10ZM8.593 7.3l-.2.008a.961.961 0 0 0-.372.1a1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.73 2.73 0 0 0 6.9 9.62c.002.49.13.967.33 1.413c.409.902 1.082 1.857 1.97 2.742c.214.213.424.427.65.626a9.448 9.448 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231a4.83 4.83 0 0 0 .383-.22s.043-.028.125-.09c.135-.1.218-.171.33-.288c.083-.086.155-.187.21-.302c.078-.163.156-.474.188-.733c.024-.198.017-.306.014-.373c-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.497.497 0 0 0-.176-.041a.482.482 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13a1.43 1.43 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6.025 6.025 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.297 6.297 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373c.118-.19.155-.385.093-.536c-.28-.684-.57-1.365-.868-2.041c-.059-.134-.234-.23-.393-.249c-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004l.201-.008Z"/>
 						</svg>
 					</a>
-					<a target="blank" href="https://t.me/+916009341754">
+					<a target="blank" href="https://t.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 22c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10Zm-3.11-8.83l.013-.007l.87 2.87c.112.311.266.367.453.341c.188-.025.287-.126.41-.244l1.188-1.148l2.55 1.888c.466.257.801.124.917-.432l1.658-7.822c.183-.728-.139-1.02-.703-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78Z"/>
 						</svg>
@@ -218,12 +204,12 @@
 				</ul>
 				<div class="course_contact">
 					<span>Contact us at: </span>
-					<a target="blank" href="https://wa.me/+916009341754">
+					<a target="blank" href="https://wa.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.005 22l1.352-4.968A9.953 9.953 0 0 1 2.001 12c0-5.523 4.477-10 10-10ZM8.593 7.3l-.2.008a.961.961 0 0 0-.372.1a1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.73 2.73 0 0 0 6.9 9.62c.002.49.13.967.33 1.413c.409.902 1.082 1.857 1.97 2.742c.214.213.424.427.65.626a9.448 9.448 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231a4.83 4.83 0 0 0 .383-.22s.043-.028.125-.09c.135-.1.218-.171.33-.288c.083-.086.155-.187.21-.302c.078-.163.156-.474.188-.733c.024-.198.017-.306.014-.373c-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.497.497 0 0 0-.176-.041a.482.482 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13a1.43 1.43 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6.025 6.025 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.297 6.297 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373c.118-.19.155-.385.093-.536c-.28-.684-.57-1.365-.868-2.041c-.059-.134-.234-.23-.393-.249c-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004l.201-.008Z"/>
 						</svg>
 					</a>
-					<a target="blank" href="https://t.me/+916009341754">
+					<a target="blank" href="https://t.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 22c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10Zm-3.11-8.83l.013-.007l.87 2.87c.112.311.266.367.453.341c.188-.025.287-.126.41-.244l1.188-1.148l2.55 1.888c.466.257.801.124.917-.432l1.658-7.822c.183-.728-.139-1.02-.703-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78Z"/>
 						</svg>
@@ -242,12 +228,12 @@
 				</ul>
 				<div class="course_contact">
 					<span>Contact us at: </span>
-					<a target="blank" href="https://wa.me/+916009341754">
+					<a target="blank" href="https://wa.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.005 22l1.352-4.968A9.953 9.953 0 0 1 2.001 12c0-5.523 4.477-10 10-10ZM8.593 7.3l-.2.008a.961.961 0 0 0-.372.1a1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.73 2.73 0 0 0 6.9 9.62c.002.49.13.967.33 1.413c.409.902 1.082 1.857 1.97 2.742c.214.213.424.427.65.626a9.448 9.448 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231a4.83 4.83 0 0 0 .383-.22s.043-.028.125-.09c.135-.1.218-.171.33-.288c.083-.086.155-.187.21-.302c.078-.163.156-.474.188-.733c.024-.198.017-.306.014-.373c-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.497.497 0 0 0-.176-.041a.482.482 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13a1.43 1.43 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6.025 6.025 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.297 6.297 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373c.118-.19.155-.385.093-.536c-.28-.684-.57-1.365-.868-2.041c-.059-.134-.234-.23-.393-.249c-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004l.201-.008Z"/>
 						</svg>
 					</a>
-					<a target="blank" href="https://t.me/+916009341754">
+					<a target="blank" href="https://t.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 22c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10Zm-3.11-8.83l.013-.007l.87 2.87c.112.311.266.367.453.341c.188-.025.287-.126.41-.244l1.188-1.148l2.55 1.888c.466.257.801.124.917-.432l1.658-7.822c.183-.728-.139-1.02-.703-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78Z"/>
 						</svg>
@@ -266,12 +252,12 @@
 				</ul>
 				<div class="course_contact">
 					<span>Contact us at: </span>
-					<a target="blank" href="https://wa.me/+916009341754">
+					<a target="blank" href="https://wa.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.005 22l1.352-4.968A9.953 9.953 0 0 1 2.001 12c0-5.523 4.477-10 10-10ZM8.593 7.3l-.2.008a.961.961 0 0 0-.372.1a1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.73 2.73 0 0 0 6.9 9.62c.002.49.13.967.33 1.413c.409.902 1.082 1.857 1.97 2.742c.214.213.424.427.65.626a9.448 9.448 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231a4.83 4.83 0 0 0 .383-.22s.043-.028.125-.09c.135-.1.218-.171.33-.288c.083-.086.155-.187.21-.302c.078-.163.156-.474.188-.733c.024-.198.017-.306.014-.373c-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.497.497 0 0 0-.176-.041a.482.482 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13a1.43 1.43 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6.025 6.025 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.297 6.297 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373c.118-.19.155-.385.093-.536c-.28-.684-.57-1.365-.868-2.041c-.059-.134-.234-.23-.393-.249c-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004l.201-.008Z"/>
 						</svg>
 					</a>
-					<a target="blank" href="https://t.me/+916009341754">
+					<a target="blank" href="https://t.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 22c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10Zm-3.11-8.83l.013-.007l.87 2.87c.112.311.266.367.453.341c.188-.025.287-.126.41-.244l1.188-1.148l2.55 1.888c.466.257.801.124.917-.432l1.658-7.822c.183-.728-.139-1.02-.703-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78Z"/>
 						</svg>
@@ -291,18 +277,71 @@
 				</ul>
 				<div class="course_contact">
 					<span>Contact us at: </span>
-					<a href="https://wa.me/+916009341754">
+					<a href="https://wa.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 2c5.523 0 10 4.477 10 10s-4.477 10-10 10a9.954 9.954 0 0 1-5.03-1.355L2.005 22l1.352-4.968A9.953 9.953 0 0 1 2.001 12c0-5.523 4.477-10 10-10ZM8.593 7.3l-.2.008a.961.961 0 0 0-.372.1a1.293 1.293 0 0 0-.294.228c-.12.113-.188.211-.261.306A2.73 2.73 0 0 0 6.9 9.62c.002.49.13.967.33 1.413c.409.902 1.082 1.857 1.97 2.742c.214.213.424.427.65.626a9.448 9.448 0 0 0 3.84 2.046l.568.087c.185.01.37-.004.556-.013a1.99 1.99 0 0 0 .833-.231a4.83 4.83 0 0 0 .383-.22s.043-.028.125-.09c.135-.1.218-.171.33-.288c.083-.086.155-.187.21-.302c.078-.163.156-.474.188-.733c.024-.198.017-.306.014-.373c-.004-.107-.093-.218-.19-.265l-.582-.261s-.87-.379-1.402-.621a.497.497 0 0 0-.176-.041a.482.482 0 0 0-.378.127c-.005-.002-.072.055-.795.931a.35.35 0 0 1-.368.13a1.43 1.43 0 0 1-.191-.066c-.124-.052-.167-.072-.252-.108a6.025 6.025 0 0 1-1.575-1.003c-.126-.11-.243-.23-.363-.346a6.297 6.297 0 0 1-1.02-1.268l-.059-.095a.923.923 0 0 1-.102-.205c-.038-.147.061-.265.061-.265s.243-.266.356-.41c.11-.14.203-.276.263-.373c.118-.19.155-.385.093-.536c-.28-.684-.57-1.365-.868-2.041c-.059-.134-.234-.23-.393-.249c-.054-.006-.108-.012-.162-.016a3.385 3.385 0 0 0-.403.004l.201-.008Z"/>
 						</svg>
 					</a>
-					<a href="https://t.me/+916009341754">
+					<a href="https://t.me/+919862339932">
 						<svg class="icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 							<path fill="#000000" d="M12.001 22c-5.523 0-10-4.477-10-10s4.477-10 10-10s10 4.477 10 10s-4.477 10-10 10Zm-3.11-8.83l.013-.007l.87 2.87c.112.311.266.367.453.341c.188-.025.287-.126.41-.244l1.188-1.148l2.55 1.888c.466.257.801.124.917-.432l1.658-7.822c.183-.728-.139-1.02-.703-.788l-9.733 3.76c-.664.266-.66.638-.12.803l2.497.78Z"/>
 						</svg>
 					</a>
 				</div>
 			</div>
+		</div>
+	</section>
+	<!-- End of section -->
+
+	<!-- This is the projects section -->
+	<section id="projects">
+		<h1 class="projects_header">Student project showcase</h1>
+		<div class="project_list">
+			<a target="blank" href="/chatapp" class="project_item">
+				<img class="project_image" src="./assets/pictures/chatapp.png" alt="">
+				<div class="project_details">
+					<h2 class="project_title">InfotechChatapp</h2>
+					<p>
+						The good old chatapp, in vanilla javascript? Yes, you heard that right.
+						Students learn the concept of long polling, http requests and manipulating
+						the DOM with javascript.
+					</p>
+				</div>
+			</li>
+			<a target="blank" href="/analog_clock" class="project_item">
+				<img class="project_image" src="./assets/pictures/clock.png" alt="">
+				<div class="project_details">
+					<h2 class="project_title">Analog Clock</h2>
+					<p>
+						Analog clock, built using javascript, css and pure willpower.
+						Not only are students using the Date and setInterval functions,
+						they put their math and logic skills to the test with a simple
+						yet challenging project.
+					</p>
+				</div>
+			</a>
+			<a target="blank" href="/drum_kit" class="project_item">
+				<img class="project_image" src="./assets/pictures/drumkit.png" alt="">
+				<div class="project_details">
+					<h2 class="project_title">Drumkit</h2>
+					<p>
+						Handling keyboard inputs and playing sounds based on the key pressed.
+						It also has visual effects to show which key was pressed. Students learn 
+						to integrate css with javascript
+					</p>
+				</div>
+			</a>
+			<a target="blank" href="/WeatherApi" class="project_item">
+				<img class="project_image" src="./assets/pictures/weather.png" alt="">
+				<div class="project_details">
+					<h2 class="project_title">Weather App</h2>
+					<p>
+						Using an API from RapidAPI, students learn to make http requests and
+						manipulate the DOM based on the response. It is a fun project to learn 
+						about APIs and how to use them.
+					</p>
+				</div>
+			</a>
 		</div>
 	</section>
 	<!-- End of section -->
@@ -321,7 +360,7 @@
 			© 2023 by Infotech B. Street <br>
 			Rengkai, Churachandpur, Manipur, India <br>
 			Gmail: <a href="mailto:wintersunset95@gmail.com">WinterSunset95</a> <br>
-			Phone: <a href="tel:+916009341754">+91 6009341754</a> or <a href="tel:+916009341754">+91 6009341754</a>
+			Phone: <a href="https://wa.me/+919862339932">+91 9862339932</a> or <a href="https://wa.me/+916009341754">+91 6009341754</a>
 		</div>
 	</section>
 	<!-- End of section -->
